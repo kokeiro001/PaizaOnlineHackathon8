@@ -14,7 +14,7 @@ namespace PaizaOnlineHackathon8 {
     protected abstract void Output();
 
     [Conditional("LOCAL_DEBUG")]
-    private void ChangeInputFromLocalFile(string fname) {
+    protected void ChangeInputFromLocalFile(string fname) {
       Console.SetIn(new System.IO.StreamReader(fname));
     }
 
