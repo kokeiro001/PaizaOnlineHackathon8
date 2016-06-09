@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Linq;
 using System.Diagnostics;
 
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiHair3();
+      PaizaOnlineHackathon obj = new HatsukoiHair4();
       obj.Run();
     }
   }
@@ -21,17 +22,4 @@ namespace PaizaOnlineHackathon8 {
     }
   }
 
-  public class HatsukoiHair4 : PaizaOnlineHackathon {
-    protected override void Calclate() {
-      throw new NotImplementedException();
-    }
-
-    protected override void Output() {
-      throw new NotImplementedException();
-    }
-
-    protected override void ReadInput() {
-      throw new NotImplementedException();
-    }
-  }
 }
