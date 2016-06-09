@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Text;
 using System.Linq;
-using System.Diagnostics;
 
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiHair4();
+      PaizaOnlineHackathon obj = new HatsukoiHair5();
       obj.Run();
     }
   }
@@ -23,15 +23,26 @@ namespace PaizaOnlineHackathon8 {
   }
 
   public class HatsukoiHair5 : PaizaOnlineHackathon {
+
+    private int s;
+    private int t;
+    private string result;
+
     protected override void ReadInput() {
-      throw new NotImplementedException();
+      s = int.Parse(Console.ReadLine());
+      t = int.Parse(Console.ReadLine());
     }
+
     protected override void Calclate() {
-      throw new NotImplementedException();
+      StringBuilder sb = new StringBuilder();
+      for (int i = 1; i <= s; i++) {
+        sb.Append(i == t ? "+" : "-");
+      }
+      result = sb.ToString();
     }
 
     protected override void Output() {
-      throw new NotImplementedException();
+      Console.WriteLine(result);
     }
   }
 }
