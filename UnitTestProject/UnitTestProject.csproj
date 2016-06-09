@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="HatsukoiHair2Test.cs" />
     <Compile Include="HatsukoiHair3Test.cs" />
+    <Compile Include="HatsukoiHair4Test.cs" />
+    <Compile Include="POHTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestHelper.cs" />
   </ItemGroup>

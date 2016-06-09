@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaizaOnlineHackathon8;
 
 namespace UnitTestProject {
+
   public static class TestHelper {
     public static void Test(PaizaOnlineHackathon obj, StringBuilder input, StringBuilder expected) {
       StringBuilder actual = new StringBuilder();
