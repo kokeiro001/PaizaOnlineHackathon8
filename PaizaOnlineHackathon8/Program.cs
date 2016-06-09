@@ -4,6 +4,8 @@ using System.Diagnostics;
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
+      PaizaOnlineHackathon obj = new HatsukoiHair2();
+      obj.Run();
     }
   }
 
