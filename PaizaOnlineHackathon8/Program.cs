@@ -7,19 +7,12 @@ namespace PaizaOnlineHackathon8 {
     }
   }
 
-  abstract class PaizaOnlineHackathon {
-    protected virtual void Setup() { }
+  public abstract class PaizaOnlineHackathon {
     protected abstract void ReadInput();
     protected abstract void Calclate();
     protected abstract void Output();
 
-    [Conditional("LOCAL_DEBUG")]
-    protected void ChangeInputFromLocalFile(string fname) {
-      Console.SetIn(new System.IO.StreamReader(fname));
-    }
-
     public void Run() {
-      Setup();
       ReadInput();
       Calclate();
       Output();
