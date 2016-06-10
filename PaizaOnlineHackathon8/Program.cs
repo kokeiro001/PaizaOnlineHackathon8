@@ -5,7 +5,7 @@ using System.Linq;
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiHair5();
+      PaizaOnlineHackathon obj = new HatsukoiEye2();
       obj.Run();
     }
   }
@@ -24,15 +24,22 @@ namespace PaizaOnlineHackathon8 {
 
   public class HatsukoiEye2 : PaizaOnlineHackathon {
 
+    private int nokoriZasekiNum;
+    private int groupNum;
+    private string result;
+
     protected override void ReadInput() {
-      throw new NotImplementedException();
+      int[] inputs = Console.ReadLine().Split(' ').Select(str => int.Parse(str)).ToArray();
+      nokoriZasekiNum = inputs[0];
+      groupNum = inputs[1];
     }
+
     protected override void Calclate() {
-      throw new NotImplementedException();
+      result = nokoriZasekiNum >= groupNum ? "OK" : "NG";
     }
 
     protected override void Output() {
-      throw new NotImplementedException();
+      Console.WriteLine(result);
     }
   }
 }
