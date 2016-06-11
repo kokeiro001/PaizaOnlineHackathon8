@@ -51,6 +51,7 @@
     <Compile Include="HatsukoiHair3.cs" />
     <Compile Include="HatsukoiHair4.cs" />
     <Compile Include="HatsukoiHair5.cs" />
+    <Compile Include="HatsukoiSpecial2.cs" />
     <Compile Include="HatuskoiEye3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
