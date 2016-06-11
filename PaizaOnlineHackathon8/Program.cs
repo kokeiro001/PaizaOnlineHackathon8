@@ -25,16 +25,28 @@ namespace PaizaOnlineHackathon8 {
 
   public class HatsukoiSpecial5 : PaizaOnlineHackathon {
 
+    private int workPerDay;
+    private int totalEvent;
+    private string result;
+
     protected override void ReadInput() {
-      throw new NotImplementedException();
+      workPerDay = int.Parse(Console.ReadLine());
+      totalEvent = int.Parse(Console.ReadLine());
     }
 
     protected override void Calclate() {
-      throw new NotImplementedException();
+      int nokoriEvent = totalEvent;
+      int week = 0;
+      do {
+        week++;
+        nokoriEvent -= workPerDay * 2;
+      } while (nokoriEvent > 0);
+
+      result = week.ToString();
     }
 
     protected override void Output() {
-      throw new NotImplementedException();
+      Console.WriteLine(result);
     }
   }
 }
