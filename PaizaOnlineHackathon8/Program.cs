@@ -6,7 +6,7 @@ using System.Linq;
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiEye4();
+      PaizaOnlineHackathon obj = new HatsukoiClothes2();
       obj.Run();
     }
   }
@@ -23,4 +23,18 @@ namespace PaizaOnlineHackathon8 {
     }
   }
 
+  public class HatsukoiClothes2 : PaizaOnlineHackathon {
+
+    protected override void ReadInput() {
+      throw new NotImplementedException();
+    }
+
+    protected override void Calclate() {
+      throw new NotImplementedException();
+    }
+
+    protected override void Output() {
+      throw new NotImplementedException();
+    }
+  }
 }
