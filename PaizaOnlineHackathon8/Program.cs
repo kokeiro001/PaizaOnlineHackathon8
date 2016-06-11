@@ -6,7 +6,7 @@ using System.Linq;
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiClothes2();
+      PaizaOnlineHackathon obj = new HatsukoiClothes3();
       obj.Run();
     }
   }
@@ -25,16 +25,22 @@ namespace PaizaOnlineHackathon8 {
 
   public class HatsukoiClothes3 : PaizaOnlineHackathon {
 
+    private int forward;
+    private int back;
+    private string result;
+
     protected override void ReadInput() {
-      throw new NotImplementedException();
+      var inputs = Console.ReadLine().Split(' ').Select(str => int.Parse(str)).ToArray();
+      forward = inputs[0];
+      back = inputs[1];
     }
 
     protected override void Calclate() {
-      throw new NotImplementedException();
+      result = Math.Max(0, forward - back).ToString();
     }
 
     protected override void Output() {
-      throw new NotImplementedException();
+      Console.WriteLine(result);
     }
   }
 }
