@@ -2,6 +2,8 @@
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair3
+
   public class HatsukoiHair3 : PaizaOnlineHackathon {
 
     private int n;
