@@ -22,5 +22,23 @@ namespace UnitTestProject {
       Expected.AppendLine("3");
       Test();
     }
+
+    [TestMethod]
+    public void TestMethod3() {
+      Input.AppendLine("3 3");
+      Input.AppendLine("aaa");
+      Input.AppendLine("bbb");
+      Expected.AppendLine("3");
+      Test();
+    }
+
+    [TestMethod]
+    public void TestMethod4() {
+      Input.AppendLine("3 3");
+      Input.AppendLine("aaa");
+      Input.AppendLine("aaa");
+      Expected.AppendLine("0");
+      Test();
+    }
   }
 }
