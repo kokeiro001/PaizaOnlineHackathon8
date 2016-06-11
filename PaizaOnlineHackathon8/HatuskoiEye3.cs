@@ -2,6 +2,8 @@
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye3
+
   public class HatsukoiEye3 : PaizaOnlineHackathon {
 
     private int input;

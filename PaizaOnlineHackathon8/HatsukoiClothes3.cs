@@ -3,6 +3,8 @@ using System.Linq;
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_clothes3
+
   public class HatsukoiClothes3 : PaizaOnlineHackathon {
 
     private int forward;

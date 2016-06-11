@@ -1,6 +1,9 @@
 ﻿using System;
 
 namespace PaizaOnlineHackathon8 {
+
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair2
+
   public class HatsukoiHair2 : PaizaOnlineHackathon {
 
     private int n;

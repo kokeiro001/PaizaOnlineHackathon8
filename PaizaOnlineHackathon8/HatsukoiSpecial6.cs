@@ -3,6 +3,8 @@ using System.Linq;
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_special6
+
   public class HatsukoiSpecial6 : PaizaOnlineHackathon {
 
     private int funNum;

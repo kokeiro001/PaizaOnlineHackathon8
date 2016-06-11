@@ -2,6 +2,8 @@
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_special2
+
   public class HatsukoiSpecial2 : PaizaOnlineHackathon {
 
     private string beforeStr;
