@@ -22,4 +22,18 @@ namespace PaizaOnlineHackathon8 {
     }
   }
 
+  public class HatsukoiEye4 : PaizaOnlineHackathon {
+
+    protected override void ReadInput() {
+      throw new NotImplementedException();
+    }
+
+    protected override void Calclate() {
+      throw new NotImplementedException();
+    }
+
+    protected override void Output() {
+      throw new NotImplementedException();
+    }
+  }
 }
