@@ -6,58 +6,35 @@ using PaizaOnlineHackathon8;
 
 namespace UnitTestProject {
   [TestClass]
-  public class HatsukoiHair2Test {
+  public class HatsukoiHair2Test : POHTest<HatsukoiHair2> {
     [TestMethod]
-    public void SampleInut1Test() {
-      StringBuilder input = new StringBuilder();
-      input.AppendLine("3");
-      input.AppendLine("idol");
+    public void TestMethod1() {
+      Input.AppendLine("3");
+      Input.AppendLine("idol");
 
-      StringBuilder expected = new StringBuilder();
-      expected.AppendLine("idol");
-      expected.AppendLine("idol");
-      expected.AppendLine("idol");
+      Expected.AppendLine("idol");
+      Expected.AppendLine("idol");
+      Expected.AppendLine("idol");
 
-      StringBuilder actual = new StringBuilder();
-      using (TextReader tr = new StringReader(input.ToString()))
-      using (TextWriter tw = new StringWriter(actual)) {
-        Console.SetIn(tr);
-        Console.SetOut(tw);
-
-        var obj = new HatsukoiHair2();
-        obj.Run();
-
-        Assert.AreEqual(expected.ToString(), actual.ToString());
-      }
+      Test();
     }
 
     [TestMethod]
-    public void SampleInut2Test() {
-      StringBuilder input = new StringBuilder();
-      input.AppendLine("10");
-      input.AppendLine("dream");
+    public void TestMethod2() {
+      Input.AppendLine("10");
+      Input.AppendLine("dream");
 
-      StringBuilder except = new StringBuilder();
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-      except.AppendLine("dream");
-
-      StringBuilder result = new StringBuilder();
-      using (TextReader tr = new StringReader(input.ToString()))
-      using (TextWriter tw = new StringWriter(result)) {
-        Console.SetIn(tr);
-        Console.SetOut(tw);
-        var obj = new HatsukoiHair2();
-        obj.Run();
-        Assert.AreEqual(except.ToString(), result.ToString());
-      }
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Expected.AppendLine("dream");
+      Test();
     }
   }
 }

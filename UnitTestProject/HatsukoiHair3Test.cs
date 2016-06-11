@@ -6,13 +6,13 @@ namespace UnitTestProject {
   public class HatsukoiHair3Test : POHTest<HatsukoiHair3> {
 
     [TestMethod]
-    public void SampleInut1Test() {
+    public void TestMethod1() {
       Input.AppendLine("7");
       Expected.AppendLine("lucky");
       Test();
     }
     [TestMethod]
-    public void SampleInut2Test() {
+    public void TestMethod2() {
       Input.AppendLine("12");
       Expected.AppendLine("unlucky");
       Test();
