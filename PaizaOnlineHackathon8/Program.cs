@@ -5,7 +5,7 @@ using System.Linq;
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiEye2();
+      PaizaOnlineHackathon obj = new HatsukoiEye3();
       obj.Run();
     }
   }
