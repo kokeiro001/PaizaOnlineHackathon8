@@ -24,16 +24,20 @@ namespace PaizaOnlineHackathon8 {
 
   public class HatsukoiEye3 : PaizaOnlineHackathon {
 
+    private int input;
+    private string result;
+
     protected override void ReadInput() {
-      throw new NotImplementedException();
+      input = int.Parse(Console.ReadLine());
     }
 
     protected override void Calclate() {
-      throw new NotImplementedException();
+      int point = (input / 100) + ((input >= 1000) ? 10 : 0);
+      result = point.ToString();
     }
 
     protected override void Output() {
-      throw new NotImplementedException();
+      Console.WriteLine(result);
     }
   }
 }
