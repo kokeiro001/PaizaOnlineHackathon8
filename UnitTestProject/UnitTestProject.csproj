@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="HatsukoiClothes2Test.cs" />
+    <Compile Include="HatsukoiClothes3Test.cs" />
     <Compile Include="HatsukoiEye2Test.cs" />
     <Compile Include="HatsukoiEye3Test.cs" />
     <Compile Include="HatsukoiEye4Test.cs" />
