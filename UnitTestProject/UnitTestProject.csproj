@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="HatsukoiEye2Test.cs" />
     <Compile Include="HatsukoiEye3Test.cs" />
+    <Compile Include="HatsukoiEye4Test.cs" />
     <Compile Include="HatsukoiHair2Test.cs" />
     <Compile Include="HatsukoiHair3Test.cs" />
     <Compile Include="HatsukoiHair4Test.cs" />
