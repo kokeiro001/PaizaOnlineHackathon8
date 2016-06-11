@@ -2,6 +2,8 @@
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_special5
+
   public class HatsukoiSpecial5 : PaizaOnlineHackathon {
 
     private int workPerDay;

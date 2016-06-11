@@ -4,6 +4,8 @@ using System.Linq;
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye4
+
   public class HatsukoiEye4 : PaizaOnlineHackathon {
 
     private List<int> numbers = new List<int>();

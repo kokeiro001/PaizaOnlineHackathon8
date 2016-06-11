@@ -3,6 +3,8 @@ using System.Linq;
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye2
+
   public class HatsukoiEye2 : PaizaOnlineHackathon {
 
     private int nokoriZasekiNum;

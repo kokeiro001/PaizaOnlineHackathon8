@@ -3,6 +3,8 @@ using System.Linq;
 
 namespace PaizaOnlineHackathon8 {
 
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_clothes2
+
   public class HatsukoiClothes2 : PaizaOnlineHackathon {
 
     private int staffNum;

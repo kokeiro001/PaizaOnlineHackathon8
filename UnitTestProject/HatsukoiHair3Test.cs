@@ -1,39 +1,21 @@
-﻿using System;
-using System.IO;
-using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaizaOnlineHackathon8;
 
 namespace UnitTestProject {
   [TestClass]
-  public class HatsukoiHair3Test {
-
-    private HatsukoiHair3 obj;
-
-    [TestInitialize]
-    public void Initialize() {
-      obj = new HatsukoiHair3();
-    }
+  public class HatsukoiHair3Test : POHTest<HatsukoiHair3> {
 
     [TestMethod]
-    public void SampleInut1Test() {
-      StringBuilder input = new StringBuilder();
-      input.AppendLine("7");
-
-      StringBuilder expected = new StringBuilder();
-      expected.AppendLine("lucky");
-
-      TestHelper.Test(obj, input, expected);
+    public void TestMethod1() {
+      Input.AppendLine("7");
+      Expected.AppendLine("lucky");
+      Test();
     }
     [TestMethod]
-    public void SampleInut2Test() {
-      StringBuilder input = new StringBuilder();
-      input.AppendLine("12");
-
-      StringBuilder expected = new StringBuilder();
-      expected.AppendLine("unlucky");
-
-      TestHelper.Test(obj, input, expected);
+    public void TestMethod2() {
+      Input.AppendLine("12");
+      Expected.AppendLine("unlucky");
+      Test();
     }
   }
 }

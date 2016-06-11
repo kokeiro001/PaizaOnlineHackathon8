@@ -2,6 +2,9 @@
 using System.Text;
 
 namespace PaizaOnlineHackathon8 {
+
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair5
+
   public class HatsukoiHair5 : PaizaOnlineHackathon {
 
     private int s;
