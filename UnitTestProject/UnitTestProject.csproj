@@ -63,6 +63,7 @@
     <Compile Include="HatsukoiHair5Test.cs" />
     <Compile Include="HatsukoiSpecial2Test.cs" />
     <Compile Include="HatsukoiSpecial5Test.cs" />
+    <Compile Include="HatsukoiSpecial6Test.cs" />
     <Compile Include="POHTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestHelper.cs" />
