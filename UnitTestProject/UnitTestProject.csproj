@@ -52,12 +52,20 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="HatsukoiClothes2Test.cs" />
+    <Compile Include="HatsukoiClothes3Test.cs" />
+    <Compile Include="HatsukoiEye2Test.cs" />
+    <Compile Include="HatsukoiEye3Test.cs" />
+    <Compile Include="HatsukoiEye4Test.cs" />
     <Compile Include="HatsukoiHair2Test.cs" />
     <Compile Include="HatsukoiHair3Test.cs" />
     <Compile Include="HatsukoiHair4Test.cs" />
+    <Compile Include="HatsukoiHair5Test.cs" />
+    <Compile Include="HatsukoiSpecial2Test.cs" />
+    <Compile Include="HatsukoiSpecial5Test.cs" />
+    <Compile Include="HatsukoiSpecial6Test.cs" />
     <Compile Include="POHTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PaizaOnlineHackathon8\PaizaOnlineHackathon8.csproj">

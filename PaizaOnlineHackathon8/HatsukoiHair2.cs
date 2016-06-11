@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PaizaOnlineHackathon8 {
+
+  // https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair2
+
   public class HatsukoiHair2 : PaizaOnlineHackathon {
 
     private int n;

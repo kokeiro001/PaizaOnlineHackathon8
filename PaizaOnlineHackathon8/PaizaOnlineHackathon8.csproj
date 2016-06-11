@@ -43,9 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HatsukoiClothes2.cs" />
+    <Compile Include="HatsukoiClothes3.cs" />
+    <Compile Include="HatsukoiEye2.cs" />
+    <Compile Include="HatsukoiEye4.cs" />
     <Compile Include="HatsukoiHair2.cs" />
     <Compile Include="HatsukoiHair3.cs" />
     <Compile Include="HatsukoiHair4.cs" />
+    <Compile Include="HatsukoiHair5.cs" />
+    <Compile Include="HatsukoiSpecial2.cs" />
+    <Compile Include="HatsukoiSpecial5.cs" />
+    <Compile Include="HatsukoiSpecial6.cs" />
+    <Compile Include="HatsukoiEye3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

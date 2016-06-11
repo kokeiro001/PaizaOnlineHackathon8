@@ -3,18 +3,18 @@ using PaizaOnlineHackathon8;
 
 namespace UnitTestProject {
   [TestClass]
-  public class HatsukoiHair3Test : POHTest<HatsukoiHair3> {
-
+  public class HatsukoiEye2Test : POHTest<HatsukoiEye2> {
     [TestMethod]
     public void TestMethod1() {
-      Input.AppendLine("7");
-      Expected.AppendLine("lucky");
+      Input.AppendLine("5 2");
+      Expected.AppendLine("OK");
       Test();
     }
+
     [TestMethod]
     public void TestMethod2() {
-      Input.AppendLine("12");
-      Expected.AppendLine("unlucky");
+      Input.AppendLine("3 4");
+      Expected.AppendLine("NG");
       Test();
     }
   }

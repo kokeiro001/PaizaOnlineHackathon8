@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Linq;
-using System.Diagnostics;
 
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiHair4();
+      PaizaOnlineHackathon obj = new HatsukoiSpecial6();
       obj.Run();
     }
   }
