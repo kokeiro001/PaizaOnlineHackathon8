@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiEye3();
+      PaizaOnlineHackathon obj = new HatsukoiEye4();
       obj.Run();
     }
   }
@@ -24,16 +25,21 @@ namespace PaizaOnlineHackathon8 {
 
   public class HatsukoiEye4 : PaizaOnlineHackathon {
 
+    private List<int> numbers = new List<int>();
+    string result;
+
     protected override void ReadInput() {
-      throw new NotImplementedException();
+      int n = int.Parse(Console.ReadLine());
+      numbers = Console.ReadLine().Split(' ').Select(numStr => int.Parse(numStr)).ToList();
     }
 
     protected override void Calclate() {
-      throw new NotImplementedException();
+      numbers.Sort();
+      result = numbers[numbers.Count / 2].ToString();
     }
 
     protected override void Output() {
-      throw new NotImplementedException();
+      Console.WriteLine(result);
     }
   }
 }
