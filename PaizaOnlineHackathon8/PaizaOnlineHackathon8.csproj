@@ -55,6 +55,7 @@
     <Compile Include="HatsukoiSpecial5.cs" />
     <Compile Include="HatsukoiSpecial6.cs" />
     <Compile Include="HatsukoiEye3.cs" />
+    <Compile Include="POH.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
