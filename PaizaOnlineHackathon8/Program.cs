@@ -1,26 +1,21 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Linq;
+using C = System.Console;
+using E = System.Linq.Enumerable;
 
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      PaizaOnlineHackathon obj = new HatsukoiSpecial6();
-      obj.Run();
+      new HatsukoiHair5_One().Run();
     }
   }
 
-  public abstract class PaizaOnlineHackathon {
-    protected abstract void ReadInput();
-    protected abstract void Calclate();
-    protected abstract void Output();
-
-    public void Run() {
-      ReadInput();
-      Calclate();
-      Output();
-    }
+  public interface IOnePaizaOnlineHackathon {
+    void Run();
   }
 
 }
