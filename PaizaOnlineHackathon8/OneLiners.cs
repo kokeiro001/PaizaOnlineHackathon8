@@ -13,10 +13,15 @@ namespace PaizaOnlineHackathon8 {
     }
   }
 
-
   public class HatsukoiHair3_One : IOnePaizaOnlineHackathon {
     public void Run() {
       C.WriteLine(int.Parse(C.ReadLine()) % 7 == 0 ? "lucky" : "unlucky");
+    }
+  }
+
+  public class HatsukoiHair4_One : IOnePaizaOnlineHackathon {
+    public void Run() {
+      C.WriteLine(E.Range(0, 5).Select(_ => C.ReadLine().Split(' ')).Count(list => list[0] == list[1]) >= 3 ? "OK" : "NG");
     }
   }
 }

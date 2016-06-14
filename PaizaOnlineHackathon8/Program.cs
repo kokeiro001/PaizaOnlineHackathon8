@@ -9,12 +9,11 @@ using E = System.Linq.Enumerable;
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      new HatsukoiHair3_One().Run();
+      new HatsukoiHair4_One().Run();
     }
   }
 
   public interface IOnePaizaOnlineHackathon {
     void Run();
   }
-
 }
