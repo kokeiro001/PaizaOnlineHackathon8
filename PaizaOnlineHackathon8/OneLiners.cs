@@ -43,4 +43,10 @@ namespace PaizaOnlineHackathon8 {
       C.WriteLine(new int[] { int.Parse(C.ReadLine()) }.Select(num => num / 100 + (num >= 1000 ? 10 : 0)).First());
     }
   }
+
+  public class HatsukoiEye4_One : IOnePaizaOnlineHackathon {
+    public void Run() {
+      C.WriteLine(new List<List<List<int>>> { new List<List<int>> { new List<int> { int.Parse(C.ReadLine()) }, { C.ReadLine().Split(' ').Select(str => int.Parse(str)).OrderBy(n => n).ToList() } } }.Select(list => list[1][list[0][0] / 2]).First());
+    }
+  }
 }
