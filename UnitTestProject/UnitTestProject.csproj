@@ -64,6 +64,7 @@
     <Compile Include="HatsukoiSpecial2Test.cs" />
     <Compile Include="HatsukoiSpecial5Test.cs" />
     <Compile Include="HatsukoiSpecial6Test.cs" />
+    <Compile Include="POHOne\OneHatsukoiClothes2Test.cs" />
     <Compile Include="POHOne\OneHatsukoiEye4Test.cs" />
     <Compile Include="POHOne\OneHatsukoiEye3Test.cs" />
     <Compile Include="POHOne\OneHatsukoiEye2Test.cs" />
