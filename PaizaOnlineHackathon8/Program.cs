@@ -10,7 +10,7 @@ using E = System.Linq.Enumerable;
 namespace PaizaOnlineHackathon8 {
   class Program {
     static void Main(string[] args) {
-      new HatsukoiClothes2_One().Run();
+      new HatsukoiClothes3_One().Run();
     }
   }
 

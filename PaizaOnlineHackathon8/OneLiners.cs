@@ -55,4 +55,10 @@ namespace PaizaOnlineHackathon8 {
       C.WriteLine(new List<List<int>> { C.ReadLine().Split(' ').Select(str => int.Parse(str)).ToList() }.Any(list => list[1] % list[0] == 0) ? "ok" : "ng");
     }
   }
+
+  public class HatsukoiClothes3_One : IOnePaizaOnlineHackathon {
+    public void Run() {
+      C.WriteLine(new List<List<int>> { C.ReadLine().Split(' ').Select(str => int.Parse(str)).ToList() }.Select(list => Math.Max(0, list[0] - list[1])).First());
+    }
+  }
 }
