@@ -31,4 +31,10 @@ namespace PaizaOnlineHackathon8 {
       C.WriteLine(Regex.Replace(string.Join("", E.Range(0, int.Parse(C.ReadLine())).Select(_ => "-")), "^(" + string.Join("", E.Range(0, int.Parse(C.ReadLine()) - 1).Select(_ => "-")) + ")-", "$1+"));
     }
   }
+
+  public class HatsukoiEye2_One : IOnePaizaOnlineHackathon {
+    public void Run() {
+      C.WriteLine(new List<List<int>> { new List<int>(C.ReadLine().Split(' ').Select(str => int.Parse(str))) }.Any(list => list[0] >= list[1]) ? "OK" : "NG");
+    }
+  }
 }
