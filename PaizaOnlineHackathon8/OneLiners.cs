@@ -73,4 +73,10 @@ namespace PaizaOnlineHackathon8 {
       C.WriteLine(new List<List<int>> { new List<int>() { int.Parse(C.ReadLine()), int.Parse(C.ReadLine()) } }.Select(list => (list[1] / (list[0] * 2)) + ((list[1] % (list[0] * 2)) == 0 ? 0 : 1)).First());
     }
   }
+
+  public class HatsukoiSpecial6_One : IOnePaizaOnlineHackathon {
+    public void Run() {
+      C.WriteLine(new List<List<int>> { C.ReadLine().Split(' ').Select(str => int.Parse(str)).Concat(C.ReadLine().Split(' ').Select(str => int.Parse(str))).ToList() }.Select(list => (list[0] * list[1]) + ((list[0] / list[2]) + ((((list[0] % list[2]) == 0) ? 0 : 1))) * list[3]).First());
+    }
+  }
 }
