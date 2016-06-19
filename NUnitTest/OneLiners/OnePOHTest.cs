@@ -1,19 +1,20 @@
 ﻿using System;
 using System.IO;
 using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 using PaizaOnlineHackathon8;
 
 namespace UnitTestProject {
-  [TestClass]
-  public abstract class POHTest<T> where T : PaizaOnlineHackathon, new() {
+
+  [TestFixture]
+  public abstract class OnePOHTest<T> where T : IOnePaizaOnlineHackathon, new() {
 
     private T obj;
     protected StringBuilder Input { get; private set; }
     protected StringBuilder Expected { get; private set; }
 
-    [TestInitialize]
+    [SetUp]
     public void Initialize() {
       obj = new T();
       Input = new StringBuilder();

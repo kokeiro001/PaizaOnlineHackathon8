@@ -1,17 +1,19 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using PaizaOnlineHackathon8;
 
 namespace UnitTestProject {
-  [TestClass]
+
+  [TestFixture]
   public class HatsukoiEye2Test : POHTest<HatsukoiEye2> {
-    [TestMethod]
+
+    [Test]
     public void TestMethod1() {
       Input.AppendLine("5 2");
       Expected.AppendLine("OK");
       Test();
     }
 
-    [TestMethod]
+    [Test]
     public void TestMethod2() {
       Input.AppendLine("3 4");
       Expected.AppendLine("NG");

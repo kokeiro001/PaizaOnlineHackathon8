@@ -1,10 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using PaizaOnlineHackathon8;
 
 namespace UnitTestProject {
-  [TestClass]
+
+  [TestFixture]
   public class OneHatsukoiHair4Test : OnePOHTest<HatsukoiHair4_One> {
-    [TestMethod]
+
+    [Test]
     public void TestMethod1() {
       Input.AppendLine("U U");
       Input.AppendLine("D D");
@@ -17,7 +19,7 @@ namespace UnitTestProject {
       Test();
     }
 
-    [TestMethod]
+    [Test]
     public void TestMethod2() {
       Input.AppendLine("U U");
       Input.AppendLine("D L");

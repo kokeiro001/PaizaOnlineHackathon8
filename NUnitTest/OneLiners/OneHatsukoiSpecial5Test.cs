@@ -1,10 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using PaizaOnlineHackathon8;
 
 namespace UnitTestProject {
-  [TestClass]
+
+  [TestFixture]
   public class OneHatsukoiSpecial5Test : OnePOHTest<HatsukoiSpecial5_One> {
-    [TestMethod]
+
+    [Test]
     public void TestMethod1() {
       Input.AppendLine("2");
       Input.AppendLine("9");
@@ -12,7 +14,7 @@ namespace UnitTestProject {
       Test();
     }
 
-    [TestMethod]
+    [Test]
     public void TestMethod2() {
       Input.AppendLine("1");
       Input.AppendLine("15");
@@ -20,7 +22,7 @@ namespace UnitTestProject {
       Test();
     }
 
-    [TestMethod]
+    [Test]
     public void TestMethod3() {
       Input.AppendLine("2");
       Input.AppendLine("4");
@@ -28,7 +30,7 @@ namespace UnitTestProject {
       Test();
     }
 
-    [TestMethod]
+    [Test]
     public void TestMethod4() {
       Input.AppendLine("2");
       Input.AppendLine("8");
