@@ -1,0 +1,30 @@
+﻿using NUnit.Framework;
+using PaizaOnlineHackathon8;
+
+namespace UnitTestProject {
+
+  [TestFixture]
+  public class OneHatsukoiClothes3Test : OnePOHTest<HatsukoiClothes3_One> {
+
+    [Test]
+    public void TestMethod1() {
+      Input.AppendLine("5 2");
+      Expected.AppendLine("3");
+      Test();
+    }
+
+    [Test]
+    public void TestMethod2() {
+      Input.AppendLine("10 10");
+      Expected.AppendLine("0");
+      Test();
+    }
+
+    [Test]
+    public void TestMethod3() {
+      Input.AppendLine("2 4");
+      Expected.AppendLine("0");
+      Test();
+    }
+  }
+}

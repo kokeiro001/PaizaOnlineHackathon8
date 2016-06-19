@@ -10,7 +10,7 @@ using E = System.Linq.Enumerable;
 namespace PaizaOnlineHackathon8 {
   public class HatsukoiHair2_One : IOnePaizaOnlineHackathon {
     public void Run() {
-      C.WriteLine(string.Join("\r\n", E.Range(0, int.Parse(C.ReadLine())).Select(_ => "t")).Replace("t", C.ReadLine()));
+      C.WriteLine(string.Join(Environment.NewLine, E.Range(0, int.Parse(C.ReadLine())).Select(_ => "t")).Replace("t", C.ReadLine()));
     }
   }
 
