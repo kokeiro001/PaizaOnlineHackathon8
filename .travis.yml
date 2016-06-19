@@ -1,0 +1,8 @@
+language: csharp
+solution: PaizaOnlineHackathon8.sln
+install:
+  - nuget restore PaizaOnlineHackathon8.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release PaizaOnlineHackathon8.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./NUnitTest/bin/Release/NUnitTest.dll
